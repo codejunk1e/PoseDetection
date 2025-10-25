@@ -20,9 +20,7 @@ struct PoseView: View {
 				.font(.title)
 				.fontWeight(.bold)
 			
-			ZStack {
-				Color.black
-				
+			ZStack {				
 				HStack {
 					Circle()
 						.fill(showNewDataIndicator ? Color.green : Color.gray.opacity(0.3))
