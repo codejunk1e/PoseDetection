@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PoseView: View {
-	
+	// Normally would be in a viewModel
 	@Binding var isTracking: Bool
 	@State private var points: [CoordinatePoint] = []
 	@State private var timer: Timer?
