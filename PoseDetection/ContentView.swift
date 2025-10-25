@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+	// Normally would be in a viewModel
+	@State private var isTracking = false
+	
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+		VStack {
+			PoseView(isTracking: $isTracking)
+			Spacer()
+			ControlsView(isTracking: $isTracking)
+		}
     }
 }
 
